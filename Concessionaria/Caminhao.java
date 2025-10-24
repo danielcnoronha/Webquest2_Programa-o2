@@ -14,16 +14,16 @@
  */
 
 public class Caminhao extends Veiculo {
-    // Novo atributo exclusivo do Caminhão
-    private double capacidadeCarga; // em toneladas
 
-    // Construtor
+    private double capacidadeCarga; 
+
+  
     public Caminhao(String placa, String marca, String modelo, int ano, double valor, double capacidadeCarga) {
         super(placa, marca, modelo, ano, valor);
         this.capacidadeCarga = capacidadeCarga;
     }
 
-    // Getter e Setter
+    
     public double getCapacidadeCarga() {
         return capacidadeCarga;
     }
@@ -32,20 +32,20 @@ public class Caminhao extends Veiculo {
         this.capacidadeCarga = capacidadeCarga;
     }
 
-    // Sobrescrevendo o método calcularIpva()
+   
     @Override
     public double calcularIpva() {
         if (capacidadeCarga <= 5) {
-            return getValor() * 0.02; // 2%
+            return getValor() * 0.02; 
         } else {
-            return getValor() * 0.03; // 3%
+            return getValor() * 0.03; 
         }
     }
 
-    // Sobrescrevendo exibirInformacoes()
+   
     @Override
     public void exibirInformacoes() {
-        super.exibirInformacoes(); // chama da classe Veiculo
+        super.exibirInformacoes(); 
         System.out.println("Capacidade de carga: " + capacidadeCarga + " toneladas");
         System.out.println("IPVA calculado: R$ " + calcularIpva());
     }
