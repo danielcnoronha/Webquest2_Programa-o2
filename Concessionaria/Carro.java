@@ -1,3 +1,18 @@
+/**
+ * -------------------------------------------
+ * SISTEMA DE CONCESSIONÁRIA DE VEÍCULOS
+ * -------------------------------------------
+ * Disciplina: Programação II
+ * 
+ * 
+ * Equipe:
+ * - Daniel Cavalcanti Noronha
+ * - Alberto Silva
+ * - Bernardo Cardoso
+ * - Cauã Lucas
+ * - Davi Spindola
+ */
+
 public class Carro extends Veiculo {
     
     private int numeroPortas;
